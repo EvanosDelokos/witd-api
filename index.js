@@ -7,7 +7,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // ✅ Correct path to volume-mounted SQLite file
-const dbPath = '/data/data/addresses.sqlite';
+const dbPath = '/data/data/storage/data/addresses.sqlite';
 const zonesPath = '/data/zones.json';
 
 let db = null;
