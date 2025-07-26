@@ -12,7 +12,7 @@ const zonesPath = '/data/zones.json';
 
 let db = null;
 console.log('🔍 Checking for SQLite file at:', dbPath);
-console.log('📂 Contents of /data/data/storage:', fs.readdirSync('/data/data/storage'));
+console.log('📂 Contents of /data/data/storage/data:', fs.readdirSync('/data/data/storage/data'));
 
 if (fs.existsSync(dbPath)) {
   db = new sqlite3.Database(dbPath, err => {
