@@ -2,8 +2,10 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const sqlite3 = require('sqlite3');
+const cors = require('cors');         // 👈 NEW
 
 const app = express();
+app.use(cors());                      // 👈 NEW
 const port = process.env.PORT || 3000;
 
 // ✅ Correct path to volume-mounted SQLite file
