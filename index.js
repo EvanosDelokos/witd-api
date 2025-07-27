@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 // ✅ Correct path to volume-mounted SQLite file
 const dbPath = '/data/data/storage/data/data/addresses.sqlite';
 const zonesPath = '/data/zones.json';
-const localityPath = '/data/data/LocalityPolygon.geojson';
+const localityPath = '/data/data/storage/data/data/LocalityPolygon.geojson'; // ✅ correct path
 
 let db = null;
 console.log('🔍 Checking for SQLite file at:', dbPath);
